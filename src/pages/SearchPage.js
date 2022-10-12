@@ -33,7 +33,7 @@ function SearchPage() {
     function search(e) {
         e.preventDefault()
         setSearchInput(e.target.value)
-    }
+    } 
 
     async function searchMovies() {
         let res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=b4729e68aa0a741155fee062c4bb8df7&language=en-US&page=1&include_adult=false&query=${searchInput}`)
