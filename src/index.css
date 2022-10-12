@@ -1,0 +1,206 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  background-color: #5c5c5c;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+/* 
+  Navigation
+*/
+header {
+  background-image: url(./images/THJJRUhNlEc.png);
+  background-color: #0E0E0E;
+  width: 100%;
+  background-size: cover;
+}
+
+.links-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background-color: #000;
+  opacity: 50%;
+}
+
+/* search page */
+
+.search-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transform: translate(0, -20px);
+}
+
+.search-wrapper {
+  display: flex;
+}
+
+.search-input {
+  width: 80%;
+  height: 2.5em;
+  border: 1px solid lightgray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+  text-indent: 10px;
+
+}
+
+.search-btn {
+  cursor: pointer;
+  width: 20%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+}
+
+.no-movies-container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-movies-icon {
+  /* margin-top: 200px; */
+}
+
+.no-movies-text {
+  color: #dfdddd;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* 
+  Movie Card Template
+*/
+
+.card-container {
+  background-color: #2a2b2c;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 8px #2a2b2c;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1.25em;
+}
+    /* card img */
+.card-poster-container {
+  /* width: 30%; */
+  margin: 10px;
+}
+
+.card-poster-img {
+  width: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-poster-img-null {
+  width: 100px;
+  height: 150px;
+  background-color: #191919;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.null-poster-text {
+  color: #404040;
+  text-align: center;
+}
+/* card body */
+.card-body-container {
+  width: 60%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+    /* title */
+.card-header {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+    /* release date, rating, runtime */
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+
+.card-runtime {
+
+}
+
+.toggle-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 4px 20px;
+  width: 80%;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: 15px;
+  transform: skew(-10deg);
+}
+
+.add-btn {
+  background-color: #00cc66;
+}
+
+.remove-btn {
+  background-color: #e60000;
+}
+
+.watchlist-page {
+  padding-top: 20px;
+}
+
+/* 
+  Media
+*/
+
+@media only screen and (min-width: 500px) {
+  .nav-link {
+    font-size: 1.5em;
+  }
+
+  .card-body-container {
+    width: 70%;
+  }
+}
